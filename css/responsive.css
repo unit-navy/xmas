@@ -1,0 +1,8 @@
+/* スマホ向けレイアウト */
+@media all and (max-width: 670px) {
+  .title {
+    width: 100%;
+  }
+
+  
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>present for you</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery.rwdImageMaps.js"></script>  
+  </head>
+
+  <body>
+    <div class="modal-wrapper" id="modal-map">
+      <div class="modal">
+        <div class="close-modal" >
+          <i class="fa fa-2x fa-times" id="close-modal"></i>
+        </div>
+        <div class="modal-message">
+          <div class="modal-megane" id = "megane-touch">
+            <img src="./icon/meganedansi.png">
+            <div class="modal-fukidasi-megane" id ="megane-serifu">
+              <img src="./icon/fukidasi_opa.png">
+              <p class="modal-serifu-megane" >ここを探してみ。見つけたら教えて</p>
+            </div>
+         </div>
+        </div>
+        <div class="end">見つけた！</div>
+        <div class="madori">
+          <img class="madori" src="./icon/madori.png">
+          <div class="point">
+            <img class="point" src="./icon/point.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="title-wrapper">
+      <div class="container">
+        <div class="title" id="start">
+          <img src="./icon/merrychristmas_opacity.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="message">
+          <div class="miffy">
+            <img src="./icon/miffy.png">
+            <div class="emote">
+              <img class="hart" src="./icon/hart.png">
+              <img class="namida" src="./icon/namida.png">
+              <img class="onpu" src="./icon/onpu.png">
+              <img class="ase" src="./icon/ase.png">
+              <img class="ikari" src="./icon/青筋アイコン.png">
+            </div>
+            <div class="fukidasi-miffy">
+              <img src="./icon/fukidasi_opa.png">
+              <div class="serifu-miffy">
+                <p class="serifu-p">タイトルをタップしてね</p>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="answer">
+          <div class="yes btn" id="yes">はい</div>
+          <div class="no btn" id="no">いいえ</div>
+        </div>
+        <div class="answer-input">
+          <input class="inp" id="name" type="text">
+          <div class="inp" id="enter">決定</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="present-wrapper">
+      <div class="container">
+        <div class="present">
+          <div class="megane">
+            <img src="./icon/meganedansi.png">
+            <div class="fukidasi-megane">
+              <img src="./icon/fukidasi_opa.png">
+              <div class="serifu-megane">
+                <p class="megane-serifu-p">それじゃ、プレゼントを選びな</p>
+              </div>
+            </div>
+          </div>
+          
+          <img class="present-area" src="./icon/christmas.png" usemap="#image-map">
+          <map name="image-map">
+            <area class="click ginger" target="" alt="ジンジャーブレッド" title="ジンジャーブレッド" href="#" coords="124,70,158,15" shape="rect">
+            <area class="click ginger" target="" alt="ジンジャーブレッド" title="ジンジャーブレッド" href="#" coords="423,51,444,82" shape="rect">
+            <area class="click ginger" target="" alt="ジンジャーブレッド" title="ジンジャーブレッド" href="#" coords="247,88,264,121" shape="rect">
+            <area class="click ginger" target="" alt="ジンジャーブレッド" title="ジンジャーブレッド" href="#" coords="395,121,417,151" shape="rect">
+            <area class="click ginger" target="" alt="ジンジャーブレッド" title="ジンジャーブレッド" href="#" coords="548,179,575,208" shape="rect">
+            <area class="click ginger" target="" alt="ジンジャーブレッド" title="ジンジャーブレッド" href="#" coords="6,341,61,397" shape="rect">
+            <area class="click santa" target="" alt="サンタ" title="サンタ" href="#" coords="541,72,576,108" shape="rect">
+            <area class="click santa" target="" alt="サンタ" title="サンタ" href="#" coords="305,93,397,195" shape="rect">
+            <area class="click santa" target="" alt="サンタ" title="サンタ" href="#" coords="122,127,156,162" shape="rect">
+            <area class="click santa" target="" alt="サンタ" title="サンタ" href="#" coords="470,264,505,303" shape="rect">
+            <area class="click santa" target="" alt="サンタ" title="サンタ" href="#" coords="198,320,271,407" shape="rect">
+            <area class="click tonakai"target="" alt="トナカイ" title="トナカイ" href="#" coords="275,90,298,129" shape="rect">
+            <area class="click tonakai"target="" alt="トナカイ" title="トナカイ" href="#" coords="161,158,238,264" shape="rect">
+            <area class="click tonakai"target="" alt="トナカイ" title="トナカイ" href="#" coords="449,319,507,401" shape="rect">
+            <area class="click snowman" target="" alt="雪だるま" title="雪だるま" href="#" coords="74,59,120,134" shape="rect">
+            <area class="click snowman" target="" alt="雪だるま" title="雪だるま" href="#" coords="406,210,463,312" shape="rect">
+            <area class="click candle" target="" alt="ろうそく" title="ろうそく" href="#" coords="213,118,246,171" shape="rect">
+            <area class="click candle" target="" alt="ろうそく" title="ろうそく" href="#" coords="503,173,519,205" shape="rect">
+            <area class="click candle" target="" alt="ろうそく" title="ろうそく" href="#" coords="153,337,187,406" shape="rect"> 
+            <area class="click hazure" target="" alt="プレゼントはずれ" title="プレゼント" href="#" coords="247,32,268,76" shape="rect">
+            <area class="click hazure" target="" alt="プレゼントはずれ" title="プレゼント" href="#" coords="291,40,310,83" shape="rect">
+            <area class="click hazure" target="" alt="プレゼントはずれ" title="プレゼント" href="#" coords="325,57,347,79" shape="rect">
+            <area class="click hazure" target="" alt="プレゼントはずれ" title="プレゼント" href="#" coords="430,111,455,157" shape="rect">
+            <area class="click hazure" target="" alt="プレゼントはずれ" title="プレゼント" href="#" coords="479,93,509,148" shape="rect">
+            <area class="click hazure" target="" alt="プレゼントはずれ" title="プレゼント" href="#" coords="526,133,561,164" shape="rect">
+            <area class="click hazure" target="" alt="プレゼントはずれ" title="プレゼント" href="#" coords="276,277,259,261" shape="rect">
+            <area class="click hazure" target="" alt="プレゼントはずれ" title="プレゼント" href="#" coords="118,377,129,395" shape="rect">
+            <area class="click hazure" target="" alt="プレゼントはずれ" title="プレゼント" href="#" coords="343,380,362,409" shape="rect">
+            <area class="click hit" target="" alt="当り" title="プレゼント" href="#" coords="246,292,262,316" shape="rect">
+          </map>               
+        </div>
+      </div>
+    </div>
+
+    <script src=".\js\Xmas.js"></script>
+  </body>
+</html>

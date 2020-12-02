@@ -154,7 +154,7 @@ a {
 .present{
   opacity:0;
   width:100%;
-  background-color:rgba(0,0,255,0.0);
+  background-color:rgba(0,100,255,0.2);
   display:block;
   text-align:center;
 }

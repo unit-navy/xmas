@@ -1,5 +1,5 @@
 /* スマホ向けレイアウト */
-@media all and (max-width: 670px) {
+@media all and (max-width: 1081px) {
   .container{
     max-width:670px;
   }

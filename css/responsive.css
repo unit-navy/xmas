@@ -1,8 +1,6 @@
 /* スマホ向けレイアウト */
 @media all and (max-width: 1081px) {
-  .container{
-    max-width:670px;
-  }
+  
   .title {
     width: 100%;
   }

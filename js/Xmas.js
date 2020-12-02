@@ -14,6 +14,7 @@ $(function(){
     }else{
       $(serifu).fadeIn("slow",function(){
         $('.serifu-p').text("ねえねえ、聞いていもいい？");
+        $('.emote').find('.emote-active').removeClass('emote-active');
         $('.onpu').addClass('emote-active');
       });
     }
@@ -73,14 +74,16 @@ $(function(){
       $('.serifu-p').text(myName+"さんだね");
       wait(1).done(function(){
         $('.serifu-p').text("すきな人はいる？");
+        $('.emote').find('.emote-active').removeClass('emote-active');
         $('.hart').addClass('emote-active');
-        $('.onpu').removeClass('emote-active');
         $('#name').val("");
         $(answerBtn).fadeIn("slow",function(){});
       });    
     }else{
       yourName=$('#name').val();
       $('.serifu-p').text("じゃあ、教えてくれたお礼にプレゼントをあげるね。");
+      $('.emote').find('.emote-active').removeClass('emote-active');
+      $('.onpu').addClass('emote-active');
       //プレゼントラッパー表示
       $('.present').css('opacity','1');
     }
@@ -88,6 +91,8 @@ $(function(){
 
   //当りクリック
   $('.hit').click(function(){
+    $('.emote-megane').find('.emote-active-megane').removeClass('emote-active-megane');
+    $('.onpu-megane').addClass('emote-active-megane');
     $('.megane-serifu-p').text("正解！宝の地図を授けよう");
     wait(2).done(function(){
       //モーダル表示
@@ -99,26 +104,34 @@ $(function(){
   
   //ジンジャーブレッドクリック
   $('.ginger').click(function(){
+    $('.emote-megane').find('.emote-active-megane').removeClass('emote-active-megane');
     $('.megane-serifu-p').text("ジンジャーブレッドマン！！");
+    $('.ikari-megane').addClass('emote-active-megane');
   });
   //サンタクリック
   $('.santa').click(function(){
+    $('.emote-megane').find('.emote-active-megane').removeClass('emote-active-megane');
     $('.megane-serifu-p').text("サンタはあげない");
+    $('.ase-megane').addClass('emote-active-megane');
   });
   //トナカイクリック
   $('.tonakai').click(function(){
+    $('.emote-megane').find('.emote-active-megane').removeClass('emote-active-megane');
     $('.megane-serifu-p').text("それは食べられません。");
   });
   //雪だるまクリック
   $('.snowman').click(function(){
+    $('.emote-megane').find('.emote-active-megane').removeClass('emote-active-megane');
     $('.megane-serifu-p').text("かってに作って遊べばいい");
   });
   //ろうそくクリック
   $('.candle').click(function(){
+    $('.emote-megane').find('.emote-active-megane').removeClass('emote-active-megane');
     $('.megane-serifu-p').text("あちちっ");
   });
     //プレゼントクリック
   $('.hazure').click(function(){
+    $('.emote-megane').find('.emote-active-megane').removeClass('emote-active-megane');
     $('.megane-serifu-p').text("はずれ～");
   });
 
@@ -133,7 +146,41 @@ $(function(){
     $('.serifu-p').text("いいものもらえた？");
     $('.megane-serifu-p').text("プレゼントは受取れたかな？");
     wait(2).done(function(){
-      $('.megane-serifu-p').text("俺にとっては "　+ myName + " の笑顔が一番のプレゼント・・・" + yourName + " より");
+      $('.msg').html('俺にとっては<br>'　+ myName + ' の笑顔が一番のプレゼント・・・');
+      //$('.msg').text('俺にとっては/r/n '　+ myName + ' の笑顔が一番のプレゼント・・・');
+      $('.from').text(yourName + "　より")
+      $('.msgcard-wrapper').show();
+      //アニメーション アニメーションをつけたいテキストを指定
+      $('.msg').textillate({
+        selector: '.texts',
+        loop: true,
+        minDisplayTime: 1000,
+        initialDelay: 1000,
+        in: {
+          effect: 'tada',
+          delayScale: 1.5,
+          delay: 50,
+          sync: false,
+          reverse: false,
+          shuffle: false,
+          callback: function () {}
+        },
+        out: {
+          effect: 'tada',
+          delayScale: 1.5,
+          delay: 50,
+          sync: false,
+          reverse: false,
+          shuffle: true,
+          callback: function () {}
+        },
+        autoStart: true,
+        inEffects: ['fadeIn'],
+        outEffects: [ 'hinge' ],
+        callback: function () {},
+        type: 'char'
+      });
+
     });
   });
   //指定秒数待機関数
@@ -146,6 +193,8 @@ $(function(){
     }, sec*1000);
     return objDef.promise();
   };
+ 
+
 
   //レスポンシブ
   jQuery( 'img[usemap]' ).rwdImageMaps();

@@ -6,14 +6,17 @@
     <title>present for you</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./js/textillate-master/assets/animate.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="./js/jquery.rwdImageMaps.js"></script>  
+    <script src="./js/jquery.rwdImageMaps.js"></script>
+    <script src="./js/textillate-master/jquery.textillate.js"></script>
+    <script src="./js/textillate-master/assets/jquery.lettering.js"></script>
   </head>
 
-  <body>
+  <body ontouchstart=;>
     <div class="modal-wrapper" id="modal-map">
       <div class="modal">
         <div class="close-modal" >
@@ -23,8 +26,8 @@
           <div class="modal-megane" id = "megane-touch">
             <img src="./icon/meganedansi.png">
             <div class="modal-fukidasi-megane" id ="megane-serifu">
+              <p class="modal-serifu-megane" >ここを探してみな。見つけたら教えて</p>
               <img src="./icon/fukidasi_opa.png">
-              <p class="modal-serifu-megane" >ここを探してみ。見つけたら教えて</p>
             </div>
          </div>
         </div>
@@ -84,10 +87,17 @@
         <div class="present">
           <div class="megane">
             <img src="./icon/meganedansi.png">
+            <div class="emote-megane">
+              <img class="hart-megane" src="./icon/hart.png">
+              <img class="namida-megane" src="./icon/namida.png">
+              <img class="onpu-megane" src="./icon/onpu.png">
+              <img class="ase-megane" src="./icon/ase.png">
+              <img class="ikari-megane" src="./icon/青筋アイコン.png">
+            </div>
             <div class="fukidasi-megane">
               <img src="./icon/fukidasi_opa.png">
               <div class="serifu-megane">
-                <p class="megane-serifu-p">それじゃ、プレゼントを選びな</p>
+                <p class="megane-serifu-p">下の絵からプレゼントを探してタップしてください</p>
               </div>
             </div>
           </div>
@@ -126,6 +136,14 @@
           </map>               
         </div>
       </div>
+    </div>
+
+    <div class="msgcard-wrapper">
+     <!-- <img src="./icon/PR_xmas_hk_007.png">-->
+
+      <div class="msg">俺にとっては<br>ああああああああああああああ</div>
+      <div class="from">ｘｘより</div>
+
     </div>
 
     <script src=".\js\Xmas.js"></script>

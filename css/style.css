@@ -43,7 +43,7 @@ a {
   height:100px;
   position:relative;
   position:absolute;
-  top:10%;
+  top:30%;
   left:20%;
   background-color:rgba(150,0,0,0.0);
 }
@@ -70,7 +70,6 @@ a {
   position:absolute;
   top:-20%;
   left:70%;
-
   background-color:rgba(56, 134, 102, 0.0);
 }
 
@@ -83,7 +82,6 @@ a {
   top:20%;
   left:30%;
 }
-
 
 .answer{
   background-color:rgba(0,255,0,0.0);
@@ -163,22 +161,45 @@ a {
 .present-area{
   height:80%;
   width:80%;  
+  background-color:rgba(0,255,255,0.0);
 }
 .megane{
-  position:relative;
   display:inline-block;
+  position:relative;
+  text-align:left;
+  width:100%;
+  height:160px;
+  background-color:rgba(255,0,0,0.0);
 }
 .megane img{
   width:80px;
   padding-top:40px;
 }
+.emote-megane img{
+  width:30px;
+  position:absolute;
+  top:0%;
+  left:8%;
+}
+.hart-megane, .namida-megane, .ase-megane, .onpu-megane, .ikari-megane{
+  display:none;
+}
+.emote-active-megane{
+  display:block;
+}
+
 .fukidasi-megane{
   position:relative;
   display:inline-block;
+  display:absolute;
+  top:-140px;
+  left:10%;
+  background-color:rgba(0,0,0,0.0);
 }
 .fukidasi-megane img{
   width:750px;
   padding-top:10px;
+
 }
 .serifu-megane{
   position:absolute;
@@ -213,10 +234,13 @@ a {
 }
 .modal-megane{
   display:inline-block;
+  position:relative;
+  background-color:rgba(0,255,255,0);
 }
 .modal-megane img{
   width:80px;
   padding-top:40px;
+  background-color:rgba(0,0,255,0);
 }
 
 .modal-fukidasi-megane{
@@ -273,57 +297,34 @@ a {
   to{opacity:0;}
 }
 
+/*メッセージカード*/
+.msgcard-wrapper{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index:100;
 
-/*
-.present{
   width:100%;
-  background-color:rgba(0,0,255,0.2);
-  text-align:center;
-  display:block;
-}
-.present img{
-  height:80%;
-  width:80%;
-}
-
-
-.modal-wrapper{
-  width:100%;
-  position:relative;
-  z-index:10;
+  background-image:url(../icon/PR_xmas_hk_007.png);
+  background-size: cover;
   display:none;
+  background-color:rgba(0,0,0,0.0)
 }
-.modal{
-  background-color:rgba(0,0,0,0.2);
-  text-align:center;
+.msg{
+  padding-top:100px;
+  padding-left:50px;
+  padding-right:50px;
+  font-size:50px;
+  background-color:rgba(0,0,200,0.0)
 }
-.megane img{
-  width:100px;
-  display:inline-block;
-  padding-top:40px;
-  position:relative;
-}
+.from{
+  
+  padding-right:100px;
+  text-align:right;
+  font-size:30px;
+  background-color:rgba(0,0,0,0.0)
 
-.fukidasi-megane{
-  display:none;
 }
-
-.fukidasi-megane img{
-  width:300px;
-  display:inline-block;
-  padding-top:40px;
-  position:relative;
-  position:absolute;
-  top:0px;
-  left:60%;
-}
-.serifu-megane{
-  position:absolute;
-  top:100px;
-  left:70%;
-}
-.madori{
-  margin-top:80px;
-}
-*/
 

@@ -1,8 +1,124 @@
 /* スマホ向けレイアウト */
 @media all and (max-width: 670px) {
+  .container{
+    max-width:670px;
+  }
   .title {
     width: 100%;
   }
 
+  .message{
+    text-align:left;
+    height:70px;
+  }
+  .miffy{
+    height:70px;
+    position:absolute;
+    top:40%;
+    left:0%;
+  }
+  .miffy img{
+    width:40px;
+  }
+  .emote img{
+    width:20px;
+    position:absolute;
+    top:-10%;
+    left:70%;
+  }    
+  .fukidasi-miffy{
+    width:600px;
+    position:absolute;
+    top:-125%;
+    left:-20%;
+  }
+  .fukidasi-miffy img{
+    width:600px;
+  }
+  .serifu-miffy p{
+    position:absolute;
+    top:20%;
+    left:20%;
+  }
+  .answer{
+    background-color:rgba(0,255,0,0.0);
+    text-align:center;
+    display:none;
+  }
   
+
+  
+  /*プレゼントエリア*/
+  .present{
+    opacity:0;
+    width:100%;
+    margin-top:80px;
+    background-color:rgba(0,0,255,0.0);
+    display:block;
+    text-align:left;
+  }
+  .present-area{
+    height:100%;
+    width:100%;  
+  }
+  .megane{
+    position:relative;
+    display:inline-block;
+    height:120px;
+  }
+  .megane img{
+    width:60px;
+    padding-top:30px;
+  }
+  .emote-megane img{
+    width:20px;
+    position:absolute;
+    top:0%;
+    left:12%;
+  }
+  
+  .fukidasi-megane{
+    position:relative;
+    display:inline-block;
+    position:absolute;
+    top:-50%;
+    left:-10%;
+  }
+  .fukidasi-megane img{
+    width:650px;
+    padding-top:10px;
+  }
+  .serifu-megane{
+    position:absolute;
+    top:30%;
+    left:20%;
+  }
+
+
+  /*モーダルデザイン*/
+
+  .modal{
+    text-align:left;
+  }
+  .modal-megane{
+    height:100px;
+    margin-top:10px;
+  }  
+  .modal-megane img{
+    width:60px;
+  }
+  .modal-fukidasi-megane{
+    position:absolute;
+    top:-50%;
+    left:50%;
+  }
+  .modal-fukidasi-megane img{
+    width:500px;
+  }
+  .end{
+    width:70%;
+  }
+  
+
+
 }

@@ -31,7 +31,7 @@ a {
 }
 
 .message{
-  background-color:rgba(0,255,0,0.1);
+  background-color:rgba(0,255,0,0.0);
   height:160px;
   margin-top:5px;
   text-align:center;
@@ -45,16 +45,16 @@ a {
   position:absolute;
   top:30%;
   left:20%;
-  background-color:rgba(150,0,0,0.1);
+  background-color:rgba(150,0,0,0.0);
 }
 .miffy img{
   width:60px;
 }
 .emote img{
-  width:30px;
+  width:40px;
   position:absolute;
-  top:-20%;
-  left:80%;
+  top:-50%;
+  left:10%;
 }
 .hart, .namida, .ase, .onpu, .ikari{
   display:none;
@@ -69,8 +69,8 @@ a {
   position:relative;
   position:absolute;
   top:-20%;
-  left:70%;
-  background-color:rgba(56, 134, 102, 0.1);
+  left:100%;
+  background-color:rgba(56, 134, 102, 0.0);
 }
 
 .fukidasi-miffy img{
@@ -79,12 +79,12 @@ a {
 }
 .serifu-miffy p{
   position:absolute;
-  top:20%;
-  left:30%;
+  top:10%;
+  left:10%;
 }
 
 .answer{
-  background-color:rgba(0,255,0,0.0);
+  background-color:rgba(255,2,0,0.0);
   text-align:center;
   display:none;
 }
@@ -154,7 +154,7 @@ a {
 .present{
   opacity:0;
   width:100%;
-  background-color:rgba(0,100,255,0.2);
+  background-color:rgba(0,100,255,0.0);
   display:block;
   text-align:center;
 }
@@ -176,10 +176,10 @@ a {
   padding-top:40px;
 }
 .emote-megane img{
-  width:30px;
+  width:40px;
   position:absolute;
-  top:0%;
-  left:8%;
+  top:-30%;
+  left:1%;
 }
 .hart-megane, .namida-megane, .ase-megane, .onpu-megane, .ikari-megane{
   display:none;
@@ -197,14 +197,14 @@ a {
   background-color:rgba(0,0,0,0.0);
 }
 .fukidasi-megane img{
-  width:750px;
+  width:700px;
+  height:120px;
   padding-top:10px;
-
 }
 .serifu-megane{
   position:absolute;
-  top:30%;
-  left:25%;
+  top:10%;
+  left:15%;
 }
 
 
@@ -249,6 +249,7 @@ a {
 }
 .modal-fukidasi-megane img{
   width:700px;
+  height:120px;
   padding-top:40px;
 }
 .modal-serifu-megane{
@@ -305,8 +306,7 @@ a {
   bottom: 0;
   left: 0;
   z-index:100;
-
-  width:100%;
+  width:800px;
   background-image:url(../icon/PR_xmas_hk_007.png);
   background-size: cover;
   display:none;
@@ -320,11 +320,9 @@ a {
   background-color:rgba(0,0,200,0.0)
 }
 .from{
-  
   padding-right:100px;
   text-align:right;
   font-size:30px;
   background-color:rgba(0,0,0,0.0)
-
 }
 

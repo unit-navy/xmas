@@ -27,10 +27,12 @@ $(function(){
     $(answerBtn).fadeOut();
     if (isBlackMode==1){
       $('.serifu-p').text("じゃあ、ゆるしてあげる");
+      $('.emote').find('.emote-active').removeClass('emote-active');
       $('body').css('background-color','rgba(0,0,0,0.0)');
       isBlackMode=0;
       wait(2).done(function(){
         $('.serifu-p').text("ねえねえ、聞いていもいい？");
+        $('.onpu').addClass('emote-active');
         $(answerBtn).fadeIn("slow",function(){});
       });
     }else{
@@ -47,6 +49,8 @@ $(function(){
   $('#no').click(function(){
     if($('.serifu-p').text()=="すきな人はいる？"){
       $('.serifu-p').text("さびしいひと・・");
+      $('.emote').find('.emote-active').removeClass('emote-active');
+      $('.namida').addClass('emote-active');
       wait(1).done(function(){
         //$('.present').css('display','none');
         $('.present').css('opacity','0');
@@ -56,6 +60,8 @@ $(function(){
       isBlackMode=1;
     }else{
       $('.serifu-p').text("じゃあ、もういいや・・");
+      $('.emote').find('.emote-active').removeClass('emote-active');
+      $('.ikari').addClass('emote-active');
       wait(1).done(function(){
         //$('.present').css('display','none');
         $('.present').css('opacity','0');
@@ -118,6 +124,7 @@ $(function(){
   $('.tonakai').click(function(){
     $('.emote-megane').find('.emote-active-megane').removeClass('emote-active-megane');
     $('.megane-serifu-p').text("それは食べられません。");
+    $('.namida-megane').addClass('emote-active-megane');
   });
   //雪だるまクリック
   $('.snowman').click(function(){
@@ -128,11 +135,18 @@ $(function(){
   $('.candle').click(function(){
     $('.emote-megane').find('.emote-active-megane').removeClass('emote-active-megane');
     $('.megane-serifu-p').text("あちちっ");
+    $('.hart-megane').addClass('emote-active-megane');
   });
     //プレゼントクリック
   $('.hazure').click(function(){
     $('.emote-megane').find('.emote-active-megane').removeClass('emote-active-megane');
     $('.megane-serifu-p').text("はずれ～");
+  });
+  //メガネクリック
+  $('#megane-click').click(function(){
+    $('.emote-megane').find('.emote-active-megane').removeClass('emote-active-megane');
+    $('.megane-serifu-p').text("俺はプレゼントじゃない");
+    $('.hart-megane').addClass('emote-active-megane');
   });
 
   //モーダル閉じるアイコン

@@ -206,7 +206,10 @@ a {
   top:10%;
   left:15%;
 }
-
+.kotae{
+  font-size:10px;
+  opacity:0.3;
+}
 
 /*モーダルデザイン*/
 .modal-wrapper{

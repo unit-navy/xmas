@@ -160,7 +160,7 @@ $(function(){
     $('.serifu-p').text("いいものもらえた？");
     $('.megane-serifu-p').text("プレゼントは受取れたかな？");
     wait(2).done(function(){
-      $('.msg').html('俺にとっては、<br>'　+ myName + ' の笑顔が一番のプレゼント・・・');
+      $('.msg').html('俺にとっては、大好きな <br>'　+ myName + ' の笑顔が一番のプレゼント・・・');
       //$('.msg').text('俺にとっては/r/n '　+ myName + ' の笑顔が一番のプレゼント・・・');
       $('.from').text(yourName + "　より")
       $('.msgcard-wrapper').show();
